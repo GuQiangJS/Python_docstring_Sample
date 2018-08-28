@@ -12,7 +12,7 @@ python:
   - "3.6"
   
 install:
-    pip install sphinx sphinx_rtd_theme doctr sphinxcontrib-napoleon;
+  - pip install sphinx sphinx_rtd_theme doctr sphinxcontrib-napoleon;
 script:
   - pip install doctr
   - cd docs
