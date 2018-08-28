@@ -1,0 +1,21 @@
+sudo: false
+
+language: python
+
+env:
+    global:
+    # Doctr deploy key for GuQiangJS/Python_docstring_Sample
+    - secure: "B37gTJGrwDeoYp7Wzorh9CZX92jqVccSc4IqCALiHvIHHiNQhXivGCMFO0qA5mUF1VyBlo6lry5W/WkbHTjZiRXaWHaDmTe6aG7qzytvYZS0zkjINIghPJ6hic7s0TST9XZAzgqeWW4AD9KqhxmhXmiNWTgl4mn8SfH3Fj67Yrt3e0IU3DcNcS7gq4fglz+tVJ6b+2V9NlFhMd6Y2EGEqztenDiU2PTAk5zWl0TmGClzm0Wx25iU5DT6SbQZocCrK8nuDpA8Jvf4CCtNHCEMo+Ce2N4sacG4/KcAX+JuR1TaBwRBfXkPNkDJtZgpwVtFVuYkEQ++VvXOgaobsTKijjr/fHL679VgmjGWY13Fg1dFyjOtDa3eJMstm/Qg9++GK0yURlG4vTx4yEETNbUjCS8haw93yMEvZjoyGpOFjxHZcxpT2BYJx1UWrz9ie9WCM+ajcTXqyZBXyLbCtkhj9vUmi9clK4dM0N4LpMKFxWoP6xFZYvsd+1ZPa17LnsrlPZU5zzFf3N75r8h8qdbO9lTPrT7QdtaHYdQuhenitaXX7SSgGGzoO4chzivdIfPaYTnZ7vtp/wN4Pt/J5oSPfdYm0EwS2FE8oEW4kEr9u+Tb/wmvxDGepBN5B5Q+olM+YHu/xxyltGMJLm6mVdY2hgyY1pVqdI5KGMs3PGpxcvM="
+
+
+python:
+  - "3.6"
+  
+install:
+    pip install sphinx sphinx_rtd_theme doctr sphinxcontrib-napoleon;
+    pip install doctr
+script:
+    cd docs
+    make html && make html
+    cd ..
+    doctr deploy devel --build-tags
