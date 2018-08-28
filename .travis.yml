@@ -13,8 +13,8 @@ python:
   
 install:
     pip install sphinx sphinx_rtd_theme doctr sphinxcontrib-napoleon;
+script:
     pip install doctr
-after_success:
     cd docs
     make html
     cd ..
