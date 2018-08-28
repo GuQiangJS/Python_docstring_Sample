@@ -1,0 +1,310 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="zh-CN" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="zh-CN" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>google风格示例 &mdash; Python_DocString_Example 0.0.1 文档</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="索引" href="../genindex.html" />
+    <link rel="search" title="搜索" href="../search.html" />
+    <link rel="prev" title="reStructured风格示例" href="../reStructured/index.html" /> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> Python_DocString_Example
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.0.1
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../reStructured/index.html">reStructured风格示例</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">google风格示例</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#id1">示例</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id2">特别说明</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Python_DocString_Example</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+      <li>google风格示例</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/google/index.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="google">
+<h1>google风格示例<a class="headerlink" href="#google" title="永久链接至标题">¶</a></h1>
+<p>Google的风格基本与reStructured相似，支持所有reStructured的标签，
+只是为了提高代码的简洁性做了部分调整。</p>
+<p><a class="reference external" href="https://sphinxcontrib-napoleon.readthedocs.io/en/latest/example_google.html#example-google">Example Google Style Python Docstrings</a></p>
+<p><a class="reference external" href="https://sphinxcontrib-napoleon.readthedocs.io/en/latest/">Napoleon - Marching toward legible docstrings</a></p>
+<ol class="arabic">
+<li><p class="first">使用前需要安装扩展 <code class="docutils literal notranslate"><span class="pre">$</span> <span class="pre">pip</span> <span class="pre">install</span> <span class="pre">sphinxcontrib-napoleon</span></code></p>
+</li>
+<li><p class="first">在 <code class="docutils literal notranslate"><span class="pre">conf.py</span></code> 文件中增加使用扩展 <code class="docutils literal notranslate"><span class="pre">sphinxcontrib.napoleon</span></code>:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># Add autodoc and napoleon to the extensions list</span>
+<span class="n">extensions</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;sphinx.ext.autodoc&#39;</span><span class="p">,</span> <span class="s1">&#39;sphinxcontrib.napoleon&#39;</span><span class="p">]</span>
+</pre></div>
+</div>
+</li>
+</ol>
+<p>谷歌风格:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">func</span><span class="p">(</span><span class="n">arg1</span><span class="p">,</span> <span class="n">arg2</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Summary line.</span>
+
+<span class="sd">    Extended description of function.</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        arg1 (int): Description of arg1</span>
+<span class="sd">        arg2 (str): Description of arg2</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        bool: Description of return value</span>
+
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">return</span> <span class="kc">True</span>
+</pre></div>
+</div>
+<p>NumPy风格:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">func</span><span class="p">(</span><span class="n">arg1</span><span class="p">,</span> <span class="n">arg2</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Summary line.</span>
+
+<span class="sd">    Extended description of function.</span>
+
+<span class="sd">    Parameters</span>
+<span class="sd">    ----------</span>
+<span class="sd">    arg1 : int</span>
+<span class="sd">        Description of arg1</span>
+<span class="sd">    arg2 : str</span>
+<span class="sd">        Description of arg2</span>
+
+<span class="sd">    Returns</span>
+<span class="sd">    -------</span>
+<span class="sd">    bool</span>
+<span class="sd">        Description of return value</span>
+
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">return</span> <span class="kc">True</span>
+</pre></div>
+</div>
+<span class="target" id="module-google"></span><div class="section" id="id1">
+<h2>示例<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h2>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">example</span><span class="p">(</span><span class="n">param1</span><span class="p">,</span> <span class="n">param2</span><span class="p">,</span> <span class="n">param3</span><span class="p">,</span> <span class="n">param4</span><span class="p">,</span> <span class="n">param5</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;描述示例</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        param1 (str): 第一个描述。接受一个字符串作为参数。</span>
+<span class="sd">        param2 (int): 第二个描述。接受一个数字作为参数。</span>
+<span class="sd">        param3 (tuple[str]): 第三个描述。接受一个字符串元组作为参数。</span>
+<span class="sd">        param4 (int or str or list[str] or list[int]):</span>
+<span class="sd">            第四个描述。接受数字或字符串或数字列表或字符串列表作为参数。</span>
+<span class="sd">        param5 (:py:class:`pandas.DataFrame`):</span>
+<span class="sd">            第五个描述。接受 :py:class:`pandas.DataFrame` 作为参数。</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        dict[str,int]: 返回值描述。返回字典。Key类型为字符串，Value类型为整数。</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="id2">
+<h2>特别说明<a class="headerlink" href="#id2" title="永久链接至标题">¶</a></h2>
+<p>示例文档需要写成 <cite>doctest</cite> 的风格:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Examples</span><span class="p">:</span>
+    <span class="n">Examples</span> <span class="n">should</span> <span class="n">be</span> <span class="n">written</span> <span class="ow">in</span> <span class="n">doctest</span> <span class="nb">format</span><span class="p">,</span> <span class="ow">and</span> <span class="n">should</span> <span class="n">illustrate</span> <span class="n">how</span>
+    <span class="n">to</span> <span class="n">use</span> <span class="n">the</span> <span class="n">function</span><span class="o">.</span>
+
+    <span class="o">&gt;&gt;&gt;</span> <span class="nb">print</span><span class="p">([</span><span class="n">i</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">example_generator</span><span class="p">(</span><span class="mi">4</span><span class="p">)])</span>
+    <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="../reStructured/index.html" class="btn btn-neutral" title="reStructured风格示例" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, GuQiangJS.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'0.0.1',
+            LANGUAGE:'zh_CN',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+      <script type="text/javascript" src="../_static/translations.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
