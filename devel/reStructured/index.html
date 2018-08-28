@@ -28,7 +28,7 @@
   <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="index" title="索引" href="../genindex.html" />
     <link rel="search" title="搜索" href="../search.html" />
-    <link rel="next" title="google风格示例" href="../google/index.html" />
+    <link rel="next" title="Google风格示例" href="../Napoleon/index.html" />
     <link rel="prev" title="Welcome to Python_DocString_Example’s documentation!" href="../index.html" /> 
 
   
@@ -84,8 +84,16 @@
             
               <p class="caption"><span class="caption-text">Contents:</span></p>
 <ul class="current">
-<li class="toctree-l1 current"><a class="current reference internal" href="#">reStructured风格示例</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../google/index.html">google风格示例</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">reStructured风格示例</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#id1">示例</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id2">代码段示例</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#note-warning-error-todo">颜色框(note;warning;error;todo)示例</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id3">数学符号示例</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id4">其他示例</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Napoleon/index.html">Google风格示例</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../numpy/index.html">numpy风格示例</a></li>
 </ul>
 
             
@@ -154,7 +162,9 @@
 <h1>reStructured风格示例<a class="headerlink" href="#restructured" title="永久链接至标题">¶</a></h1>
 <p>Sphinx 中关于 reStructuredText 的简单说明：<a class="reference external" href="http://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html">reStructuredText Primer</a></p>
 <p>另一个解释的不错的网站：<a class="reference external" href="http://openalea.gforge.inria.fr/doc/openalea/doc/_build/html/source/sphinx/rest_syntax.html">Restructured Text (reST) and Sphinx CheatSheet</a></p>
-<span class="target" id="module-reStructured"></span><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">example</span><span class="p">(</span><span class="n">param1</span><span class="p">,</span> <span class="n">param2</span><span class="p">,</span> <span class="n">param3</span><span class="p">,</span> <span class="n">param4</span><span class="p">,</span> <span class="n">param5</span><span class="p">):</span>
+<span class="target" id="module-reStructured"></span><div class="section" id="id1">
+<h2>示例<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h2>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">example</span><span class="p">(</span><span class="n">param1</span><span class="p">,</span> <span class="n">param2</span><span class="p">,</span> <span class="n">param3</span><span class="p">,</span> <span class="n">param4</span><span class="p">,</span> <span class="n">param5</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;描述示例</span>
 
 <span class="sd">    :param param1: 第一个描述。接受一个字符串作为参数。</span>
@@ -172,6 +182,36 @@
 <span class="sd">    &quot;&quot;&quot;</span>
 </pre></div>
 </div>
+<dl class="function">
+<dt id="reStructured.example">
+<code class="descclassname">reStructured.</code><code class="descname">example</code><span class="sig-paren">(</span><em>param1</em>, <em>param2</em>, <em>param3</em>, <em>param4</em>, <em>param5</em><span class="sig-paren">)</span><a class="headerlink" href="#reStructured.example" title="永久链接至目标">¶</a></dt>
+<dd><p>描述示例</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">参数:</th><td class="field-body"><ul class="first simple">
+<li><strong>param1</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(在 Python v3.7)"><em>str</em></a>) – 第一个描述。接受一个字符串作为参数。</li>
+<li><strong>param2</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(在 Python v3.7)"><em>int</em></a>) – 第二个描述。接受一个数字作为参数。</li>
+<li><strong>param3</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#tuple" title="(在 Python v3.7)"><em>tuple</em></a><em>[</em><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(在 Python v3.7)"><em>str</em></a><em>]</em>) – 第三个描述。接受一个字符串元组作为参数。</li>
+<li><strong>param4</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(在 Python v3.7)"><em>int</em></a><em> or </em><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(在 Python v3.7)"><em>str</em></a><em> or </em><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(在 Python v3.7)"><em>list</em></a><em>[</em><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(在 Python v3.7)"><em>str</em></a><em>] or </em><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(在 Python v3.7)"><em>list</em></a><em>[</em><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(在 Python v3.7)"><em>int</em></a><em>]</em>) – 第四个描述。接受数字或字符串或数字列表或字符串列表作为参数。</li>
+<li><strong>param5</strong> (<a class="reference external" href="http://pandas-docs.github.io/pandas-docs-travis/generated/pandas.DataFrame.html#pandas.DataFrame" title="(在 pandas v0.24.0.dev0+515.gfa47b8d.dirty)"><code class="xref py py-class docutils literal notranslate"><span class="pre">pandas.DataFrame</span></code></a>) – 第五个描述。接受 <a class="reference external" href="http://pandas-docs.github.io/pandas-docs-travis/generated/pandas.DataFrame.html#pandas.DataFrame" title="(在 pandas v0.24.0.dev0+515.gfa47b8d.dirty)"><code class="xref py py-class docutils literal notranslate"><span class="pre">pandas.DataFrame</span></code></a> 作为参数。</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">返回:</th><td class="field-body"><p class="first">返回值描述。返回字典。Key类型为字符串，Value类型为整数。</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">返回类型:</th><td class="field-body"><p class="first last"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(在 Python v3.7)">dict</a>[<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(在 Python v3.7)">str</a>,<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(在 Python v3.7)">int</a>]</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+<div class="section" id="id2">
+<h2>代码段示例<a class="headerlink" href="#id2" title="永久链接至标题">¶</a></h2>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">code_block</span><span class="p">():</span>
     <span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    .. literalinclude:: ../../reStructured/__init__.py</span>
@@ -193,6 +233,34 @@
 <span class="sd">    &quot;&quot;&quot;</span>
 </pre></div>
 </div>
+<dl class="function">
+<dt id="reStructured.code_block">
+<code class="descclassname">reStructured.</code><code class="descname">code_block</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#reStructured.code_block" title="永久链接至目标">¶</a></dt>
+<dd><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">square</span><span class="p">(</span><span class="n">a</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;short description of the function square longish explanation: returns</span>
+<span class="sd">    the square of a: :math:`a^2`</span>
+
+<span class="sd">    :param a: an input argument</span>
+<span class="sd">    :returns: a*a</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">return</span> <span class="n">a</span> <span class="o">*</span> <span class="n">a</span>
+</pre></div>
+</div>
+<p><strong>..code-block:: 下面需要空一行。</strong></p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">print</span><span class="p">(</span><span class="s2">&quot;Hello!&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>直接使用 <code class="docutils literal notranslate"><span class="pre">::</span></code> 展示代码段：:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">s</span> <span class="o">=</span> <span class="s1">&#39;Hello, world.&#39;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">str</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
+<span class="go">&#39;Hello, world.&#39;</span>
+</pre></div>
+</div>
+</dd></dl>
+
+</div>
+<div class="section" id="note-warning-error-todo">
+<h2>颜色框(note;warning;error;todo)示例<a class="headerlink" href="#note-warning-error-todo" title="永久链接至标题">¶</a></h2>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">colored_box</span><span class="p">():</span>
     <span class="sd">&quot;&quot;&quot;</span>
 
@@ -216,6 +284,37 @@
 <span class="sd">    &quot;&quot;&quot;</span>
 </pre></div>
 </div>
+<dl class="function">
+<dt id="reStructured.colored_box">
+<code class="descclassname">reStructured.</code><code class="descname">colored_box</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#reStructured.colored_box" title="永久链接至目标">¶</a></dt>
+<dd><div class="admonition seealso">
+<p class="first admonition-title">参见</p>
+<ul class="last simple">
+<li><a class="reference internal" href="#reStructured.function_with_types_in_docstring" title="reStructured.function_with_types_in_docstring"><code class="xref py py-func docutils literal notranslate"><span class="pre">reStructured.function_with_types_in_docstring()</span></code></a></li>
+<li><code class="xref py py-obj docutils literal notranslate"><span class="pre">numpy.int32</span></code></li>
+</ul>
+</div>
+<div class="admonition warning">
+<p class="first admonition-title">警告</p>
+<p><a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/constants.html#numpy.nan" title="(在 NumPy v1.15)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">numpy.nan</span></code></a></p>
+<p class="last">关联到第三方项目时，需要在 <code class="docutils literal notranslate"><span class="pre">conf.py</span></code> 中配置 <code class="docutils literal notranslate"><span class="pre">intersphinx_mapping</span></code> 结点。
+比如，需要连接到 <cite>numpy</cite> 时，需要在配置字典中增加
+<code class="docutils literal notranslate"><span class="pre">'numpy':</span> <span class="pre">('http://docs.scipy.org/doc/numpy',</span> <span class="pre">None)</span></code>。</p>
+</div>
+<div class="admonition error">
+<p class="first admonition-title">错误</p>
+<p class="last"><code class="xref py py-class docutils literal notranslate"><span class="pre">numpy.int32</span></code></p>
+</div>
+<div class="admonition-todo admonition" id="index-0">
+<p class="first admonition-title">待处理</p>
+<p class="last">还有很多事情没做。这里需要在 <code class="docutils literal notranslate"><span class="pre">conf.py</span></code> 中增加 <code class="docutils literal notranslate"><span class="pre">sphinx.ext.todo</span></code> 扩展，
+同时设置 <code class="docutils literal notranslate"><span class="pre">todo_include_todos=True</span></code></p>
+</div>
+</dd></dl>
+
+</div>
+<div class="section" id="id3">
+<h2>数学符号示例<a class="headerlink" href="#id3" title="永久链接至标题">¶</a></h2>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">math</span><span class="p">():</span>
     <span class="sd">&quot;&quot;&quot;以下内容展示数学符号使用</span>
 <span class="sd">    .. math::</span>
@@ -226,6 +325,20 @@
 <span class="sd">    &quot;&quot;&quot;</span>
 </pre></div>
 </div>
+<dl class="function">
+<dt id="reStructured.math">
+<code class="descclassname">reStructured.</code><code class="descname">math</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#reStructured.math" title="永久链接至目标">¶</a></dt>
+<dd><p>以下内容展示数学符号使用
+.. math:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">n_</span><span class="p">{</span>\<span class="n">mathrm</span><span class="p">{</span><span class="n">offset</span><span class="p">}}</span> <span class="o">=</span> \<span class="n">sum_</span><span class="p">{</span><span class="n">k</span><span class="o">=</span><span class="mi">0</span><span class="p">}</span><span class="o">^</span><span class="p">{</span><span class="n">N</span><span class="o">-</span><span class="mi">1</span><span class="p">}</span> <span class="n">s_k</span> <span class="n">n_k</span>
+</pre></div>
+</div>
+<p><span class="math notranslate nohighlight">\({lpha &gt; eta}\)</span></p>
+</dd></dl>
+
+</div>
+<div class="section" id="id4">
+<h2>其他示例<a class="headerlink" href="#id4" title="永久链接至标题">¶</a></h2>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">function_with_types_in_docstring</span><span class="p">(</span><span class="n">param1</span><span class="p">,</span> <span class="n">param2</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;包含类型描述的docstring</span>
 <span class="sd">        支持 `PEP 484`_ 类型注释。如果属性，参数和返回类型根据 `PEP 484`_ 进行注释，</span>
@@ -246,6 +359,38 @@
 <span class="sd">    &quot;&quot;&quot;</span>
 </pre></div>
 </div>
+<dl class="function">
+<dt id="reStructured.function_with_types_in_docstring">
+<code class="descclassname">reStructured.</code><code class="descname">function_with_types_in_docstring</code><span class="sig-paren">(</span><em>param1</em>, <em>param2</em><span class="sig-paren">)</span><a class="headerlink" href="#reStructured.function_with_types_in_docstring" title="永久链接至目标">¶</a></dt>
+<dd><dl class="docutils">
+<dt>包含类型描述的docstring</dt>
+<dd>支持 <a class="reference external" href="https://www.python.org/dev/peps/pep-0484/">PEP 484</a> 类型注释。如果属性，参数和返回类型根据 <a class="reference external" href="https://www.python.org/dev/peps/pep-0484/">PEP 484</a> 进行注释，
+它们不需要包含在docstring中。参见 <a class="reference internal" href="#reStructured.function_with_pep484_type_annotations" title="reStructured.function_with_pep484_type_annotations"><code class="xref py py-func docutils literal notranslate"><span class="pre">function_with_pep484_type_annotations()</span></code></a></dd>
+</dl>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">参数:</th><td class="field-body"><ul class="first simple">
+<li><strong>param1</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(在 Python v3.7)"><em>int</em></a>) – 这是第一个参数的描述。</li>
+<li><strong>param2</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(在 Python v3.7)"><em>int</em></a>) – 这是第二个参数的描述。</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">返回:</th><td class="field-body"><p class="first">返回值描述。</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">返回类型:</th><td class="field-body"><p class="first last"><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(在 Python v3.7)">bool</a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition seealso">
+<p class="first admonition-title">参见</p>
+<p class="last"><a class="reference internal" href="#reStructured.function_with_pep484_type_annotations" title="reStructured.function_with_pep484_type_annotations"><code class="xref py py-func docutils literal notranslate"><span class="pre">reStructured.function_with_pep484_type_annotations()</span></code></a></p>
+</div>
+</dd></dl>
+
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">function_with_pep484_type_annotations</span><span class="p">(</span><span class="n">param1</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span> <span class="n">param2</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>
     <span class="sd">&quot;&quot;&quot;以 `PEP 484`_ 格式撰写方法定义时，docstring中无需再次描述类型。</span>
 
@@ -258,6 +403,28 @@
 <span class="sd">    &quot;&quot;&quot;</span>
 </pre></div>
 </div>
+<dl class="function">
+<dt id="reStructured.function_with_pep484_type_annotations">
+<code class="descclassname">reStructured.</code><code class="descname">function_with_pep484_type_annotations</code><span class="sig-paren">(</span><em>param1: int</em>, <em>param2: str</em><span class="sig-paren">)</span> &#x2192; bool<a class="headerlink" href="#reStructured.function_with_pep484_type_annotations" title="永久链接至目标">¶</a></dt>
+<dd><p>以 <a class="reference external" href="https://www.python.org/dev/peps/pep-0484/">PEP 484</a> 格式撰写方法定义时，docstring中无需再次描述类型。</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">参数:</th><td class="field-body"><ul class="first simple">
+<li><strong>param1</strong> – 这是第一个参数的描述。</li>
+<li><strong>param2</strong> – 这是第二个参数的描述。</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">返回:</th><td class="field-body"><p class="first last">返回值描述。</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
 </div>
 
 
@@ -268,7 +435,7 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../google/index.html" class="btn btn-neutral float-right" title="google风格示例" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="../Napoleon/index.html" class="btn btn-neutral float-right" title="Google风格示例" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
         <a href="../index.html" class="btn btn-neutral" title="Welcome to Python_DocString_Example’s documentation!" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>

@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>google风格示例 &mdash; Python_DocString_Example 0.0.1 文档</title>
+  <title>Google风格示例 &mdash; Python_DocString_Example 0.0.1 文档</title>
   
 
   
@@ -28,6 +28,7 @@
   <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="index" title="索引" href="../genindex.html" />
     <link rel="search" title="搜索" href="../search.html" />
+    <link rel="next" title="numpy风格示例" href="../numpy/index.html" />
     <link rel="prev" title="reStructured风格示例" href="../reStructured/index.html" /> 
 
   
@@ -84,11 +85,12 @@
               <p class="caption"><span class="caption-text">Contents:</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../reStructured/index.html">reStructured风格示例</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">google风格示例</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#id1">示例</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Google风格示例</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#module-Napoleon">示例</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#id2">特别说明</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="../numpy/index.html">numpy风格示例</a></li>
 </ul>
 
             
@@ -134,13 +136,13 @@
     
       <li><a href="../index.html">Docs</a> &raquo;</li>
         
-      <li>google风格示例</li>
+      <li>Google风格示例</li>
     
     
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="../_sources/google/index.rst.txt" rel="nofollow"> View page source</a>
+            <a href="../_sources/Napoleon/index.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -154,7 +156,7 @@
            <div itemprop="articleBody">
             
   <div class="section" id="google">
-<h1>google风格示例<a class="headerlink" href="#google" title="永久链接至标题">¶</a></h1>
+<h1>Google风格示例<a class="headerlink" href="#google" title="永久链接至标题">¶</a></h1>
 <p>Google的风格基本与reStructured相似，支持所有reStructured的标签，
 只是为了提高代码的简洁性做了部分调整。</p>
 <p><a class="reference external" href="https://sphinxcontrib-napoleon.readthedocs.io/en/latest/example_google.html#example-google">Example Google Style Python Docstrings</a></p>
@@ -208,8 +210,8 @@
     <span class="k">return</span> <span class="kc">True</span>
 </pre></div>
 </div>
-<span class="target" id="module-google"></span><div class="section" id="id1">
-<h2>示例<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h2>
+<div class="section" id="module-Napoleon">
+<span id="id1"></span><h2>示例<a class="headerlink" href="#module-Napoleon" title="永久链接至标题">¶</a></h2>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">example</span><span class="p">(</span><span class="n">param1</span><span class="p">,</span> <span class="n">param2</span><span class="p">,</span> <span class="n">param3</span><span class="p">,</span> <span class="n">param4</span><span class="p">,</span> <span class="n">param5</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;描述示例</span>
 
@@ -227,6 +229,33 @@
 <span class="sd">    &quot;&quot;&quot;</span>
 </pre></div>
 </div>
+<dl class="function">
+<dt id="Napoleon.example">
+<code class="descclassname">Napoleon.</code><code class="descname">example</code><span class="sig-paren">(</span><em>param1</em>, <em>param2</em>, <em>param3</em>, <em>param4</em>, <em>param5</em><span class="sig-paren">)</span><a class="headerlink" href="#Napoleon.example" title="永久链接至目标">¶</a></dt>
+<dd><p>描述示例</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">参数:</th><td class="field-body"><ul class="first simple">
+<li><strong>param1</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(在 Python v3.7)"><em>str</em></a>) – 第一个描述。接受一个字符串作为参数。</li>
+<li><strong>param2</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(在 Python v3.7)"><em>int</em></a>) – 第二个描述。接受一个数字作为参数。</li>
+<li><strong>param3</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#tuple" title="(在 Python v3.7)"><em>tuple</em></a><em>[</em><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(在 Python v3.7)"><em>str</em></a><em>]</em>) – 第三个描述。接受一个字符串元组作为参数。</li>
+<li><strong>param4</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(在 Python v3.7)"><em>int</em></a><em> or </em><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(在 Python v3.7)"><em>str</em></a><em> or </em><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(在 Python v3.7)"><em>list</em></a><em>[</em><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(在 Python v3.7)"><em>str</em></a><em>] or </em><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(在 Python v3.7)"><em>list</em></a><em>[</em><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(在 Python v3.7)"><em>int</em></a><em>]</em>) – 第四个描述。接受数字或字符串或数字列表或字符串列表作为参数。</li>
+<li><strong>param5</strong> (<a class="reference external" href="http://pandas-docs.github.io/pandas-docs-travis/generated/pandas.DataFrame.html#pandas.DataFrame" title="(在 pandas v0.24.0.dev0+515.gfa47b8d.dirty)"><code class="xref py py-class docutils literal notranslate"><span class="pre">pandas.DataFrame</span></code></a>) – 第五个描述。接受 <a class="reference external" href="http://pandas-docs.github.io/pandas-docs-travis/generated/pandas.DataFrame.html#pandas.DataFrame" title="(在 pandas v0.24.0.dev0+515.gfa47b8d.dirty)"><code class="xref py py-class docutils literal notranslate"><span class="pre">pandas.DataFrame</span></code></a> 作为参数。</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">返回:</th><td class="field-body"><p class="first">返回值描述。返回字典。Key类型为字符串，Value类型为整数。</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">返回类型:</th><td class="field-body"><p class="first last"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(在 Python v3.7)">dict</a>[<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(在 Python v3.7)">str</a>,<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(在 Python v3.7)">int</a>]</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
 </div>
 <div class="section" id="id2">
 <h2>特别说明<a class="headerlink" href="#id2" title="永久链接至标题">¶</a></h2>
@@ -249,6 +278,8 @@
           <footer>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../numpy/index.html" class="btn btn-neutral float-right" title="numpy风格示例" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
         <a href="../reStructured/index.html" class="btn btn-neutral" title="reStructured风格示例" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>

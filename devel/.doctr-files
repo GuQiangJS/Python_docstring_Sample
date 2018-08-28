@@ -1,5 +1,7 @@
-devel/_sources/google/index.rst.txt
+devel/Napoleon/index.html
+devel/_sources/Napoleon/index.rst.txt
 devel/_sources/index.rst.txt
+devel/_sources/numpy/index.rst.txt
 devel/_sources/reStructured/index.rst.txt
 devel/_static/ajax-loader.gif
 devel/_static/basic.css
@@ -57,8 +59,8 @@ devel/_static/up-pressed.png
 devel/_static/up.png
 devel/_static/websupport.js
 devel/genindex.html
-devel/google/index.html
 devel/index.html
+devel/numpy/index.html
 devel/objects.inv
 devel/py-modindex.html
 devel/reStructured/index.html

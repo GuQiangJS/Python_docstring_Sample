@@ -11,7 +11,8 @@ Welcome to Python_DocString_Example's documentation!
    :caption: Contents:
 
    reStructured/index
-   google/index
+   Napoleon/index
+   numpy/index
 
 
 
