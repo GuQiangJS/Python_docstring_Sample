@@ -33,7 +33,7 @@ def function_with_types_in_docstring(param1, param2):
         https://www.python.org/dev/peps/pep-0484/
 
     See Also:
-        :py:func:`google.function_with_pep484_type_annotations`
+        :py:func:`Napoleon.function_with_pep484_type_annotations`
 
     """
     pass

@@ -1,4 +1,4 @@
-google风格示例
+Google风格示例
 ---------------------
 
 Google的风格基本与reStructured相似，支持所有reStructured的标签，
@@ -62,12 +62,13 @@ NumPy风格::
         """
         return True
 
-.. py:module:: google
 
 示例
 =====
 
-.. literalinclude:: ../../google/__init__.py
+.. py:module:: Napoleon
+
+.. literalinclude:: ../../Napoleon/__init__.py
     :language: python
     :lines: 1-15
 

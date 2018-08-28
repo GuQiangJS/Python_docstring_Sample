@@ -14,22 +14,41 @@ Sphinx 中关于 reStructuredText 的简单说明：`reStructuredText Primer`_
 
 .. py:module:: reStructured
 
+示例
+=====
+
 .. literalinclude:: ../../reStructured/__init__.py
     :language: python
     :lines: 11-26
 .. autofunction:: example
+
+代码段示例
+===========
+
 .. literalinclude:: ../../reStructured/__init__.py
     :language: python
     :lines: 53-71
 .. autofunction:: code_block
+
+颜色框(note;warning;error;todo)示例
+=============================
+
 .. literalinclude:: ../../reStructured/__init__.py
     :language: python
     :lines: 30-50
 .. autofunction:: colored_box
+
+数学符号示例
+==============
+
 .. literalinclude:: ../../reStructured/__init__.py
     :language: python
     :lines: 74-81
 .. autofunction:: math
+
+其他示例
+=========
+
 .. literalinclude:: ../../reStructured/__init__.py
     :language: python
     :lines: 85-102
