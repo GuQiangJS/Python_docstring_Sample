@@ -15,7 +15,11 @@ install:
     pip install sphinx sphinx_rtd_theme doctr sphinxcontrib-napoleon;
 script:
     pip install doctr
+    
     cd docs
+    
     make html
+    
     cd ..
+    
     doctr deploy devel --build-tags
