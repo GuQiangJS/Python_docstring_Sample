@@ -169,7 +169,7 @@
 
 <span class="sd">    :param param1: 第一个描述。接受一个字符串作为参数。</span>
 <span class="sd">    :type param1: str</span>
-<span class="sd">    :param param2: 第二个描述。接受一个数字作为参数。</span>
+<span class="sd">    :param param2: 第二个描述。接受一个数字作为参数。该值会参考 &#39;param1&#39; 。</span>
 <span class="sd">    :type param2: int</span>
 <span class="sd">    :param param3: 第三个描述。接受一个字符串元组作为参数。</span>
 <span class="sd">    :type param3: tuple[str]</span>
@@ -192,10 +192,10 @@
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">参数:</th><td class="field-body"><ul class="first simple">
 <li><strong>param1</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(在 Python v3.7)"><em>str</em></a>) – 第一个描述。接受一个字符串作为参数。</li>
-<li><strong>param2</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(在 Python v3.7)"><em>int</em></a>) – 第二个描述。接受一个数字作为参数。</li>
+<li><strong>param2</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(在 Python v3.7)"><em>int</em></a>) – 第二个描述。接受一个数字作为参数。该值会参考 ‘param1’ 。</li>
 <li><strong>param3</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#tuple" title="(在 Python v3.7)"><em>tuple</em></a><em>[</em><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(在 Python v3.7)"><em>str</em></a><em>]</em>) – 第三个描述。接受一个字符串元组作为参数。</li>
 <li><strong>param4</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(在 Python v3.7)"><em>int</em></a><em> or </em><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(在 Python v3.7)"><em>str</em></a><em> or </em><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(在 Python v3.7)"><em>list</em></a><em>[</em><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(在 Python v3.7)"><em>str</em></a><em>] or </em><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(在 Python v3.7)"><em>list</em></a><em>[</em><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(在 Python v3.7)"><em>int</em></a><em>]</em>) – 第四个描述。接受数字或字符串或数字列表或字符串列表作为参数。</li>
-<li><strong>param5</strong> (<a class="reference external" href="http://pandas-docs.github.io/pandas-docs-travis/generated/pandas.DataFrame.html#pandas.DataFrame" title="(在 pandas v0.24.0.dev0+515.gfa47b8d.dirty)"><code class="xref py py-class docutils literal notranslate"><span class="pre">pandas.DataFrame</span></code></a>) – 第五个描述。接受 <a class="reference external" href="http://pandas-docs.github.io/pandas-docs-travis/generated/pandas.DataFrame.html#pandas.DataFrame" title="(在 pandas v0.24.0.dev0+515.gfa47b8d.dirty)"><code class="xref py py-class docutils literal notranslate"><span class="pre">pandas.DataFrame</span></code></a> 作为参数。</li>
+<li><strong>param5</strong> (<a class="reference external" href="http://pandas-docs.github.io/pandas-docs-travis/generated/pandas.DataFrame.html#pandas.DataFrame" title="(在 pandas v0.24.0.dev0+536.gdb97089.dirty)"><code class="xref py py-class docutils literal notranslate"><span class="pre">pandas.DataFrame</span></code></a>) – 第五个描述。接受 <a class="reference external" href="http://pandas-docs.github.io/pandas-docs-travis/generated/pandas.DataFrame.html#pandas.DataFrame" title="(在 pandas v0.24.0.dev0+536.gdb97089.dirty)"><code class="xref py py-class docutils literal notranslate"><span class="pre">pandas.DataFrame</span></code></a> 作为参数。</li>
 </ul>
 </td>
 </tr>
@@ -214,15 +214,16 @@
 <h2>代码段示例<a class="headerlink" href="#id2" title="永久链接至标题">¶</a></h2>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">code_block</span><span class="p">():</span>
     <span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    .. literalinclude:: ../../reStructured/__init__.py</span>
-<span class="sd">        :language: python</span>
-<span class="sd">        :lines: 1-8</span>
+<span class="sd">    采用 literalinclude 方式包含文件中的代码段::</span>
+<span class="sd">        .. literalinclude:: ../../reStructured/__init__.py</span>
+<span class="sd">            :language: python</span>
+<span class="sd">            :lines: 1-8</span>
 
-<span class="sd">    **..code-block:: 下面需要空一行。**</span>
+<span class="sd">    采用 ``..code-block::`` 方式显示代码段。</span>
+<span class="sd">    **..code-block:: 下面需要空一行。** ::</span>
+<span class="sd">        .. code-block:: python</span>
 
-<span class="sd">    .. code-block:: python</span>
-
-<span class="sd">        print(&quot;Hello!&quot;)</span>
+<span class="sd">            print(&quot;Hello!&quot;)</span>
 
 <span class="sd">    直接使用 ``::`` 展示代码段：::</span>
 
@@ -236,7 +237,9 @@
 <dl class="function">
 <dt id="reStructured.code_block">
 <code class="descclassname">reStructured.</code><code class="descname">code_block</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#reStructured.code_block" title="永久链接至目标">¶</a></dt>
-<dd><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">square</span><span class="p">(</span><span class="n">a</span><span class="p">):</span>
+<dd><dl class="docutils">
+<dt>采用 literalinclude 方式包含文件中的代码段::</dt>
+<dd><div class="first last highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">square</span><span class="p">(</span><span class="n">a</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;short description of the function square longish explanation: returns</span>
 <span class="sd">    the square of a: :math:`a^2`</span>
 
@@ -246,8 +249,13 @@
     <span class="k">return</span> <span class="n">a</span> <span class="o">*</span> <span class="n">a</span>
 </pre></div>
 </div>
-<p><strong>..code-block:: 下面需要空一行。</strong></p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">print</span><span class="p">(</span><span class="s2">&quot;Hello!&quot;</span><span class="p">)</span>
+</dd>
+</dl>
+<p>采用 <code class="docutils literal notranslate"><span class="pre">..code-block::</span></code> 方式显示代码段。
+<strong>..code-block:: 下面需要空一行。</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">..</span> <span class="n">code</span><span class="o">-</span><span class="n">block</span><span class="p">::</span> <span class="n">python</span>
+
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Hello!&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
 <p>直接使用 <code class="docutils literal notranslate"><span class="pre">::</span></code> 展示代码段：:</p>
@@ -323,6 +331,7 @@
 
 <span class="sd">    :math:`{\alpha &gt; \beta}`</span>
 <span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">pass</span>
 </pre></div>
 </div>
 <dl class="function">
@@ -357,6 +366,7 @@
 <span class="sd">    .. seealso::</span>
 <span class="sd">        :py:func:`reStructured.function_with_pep484_type_annotations`</span>
 <span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">pass</span>
 </pre></div>
 </div>
 <dl class="function">
@@ -401,6 +411,7 @@
 <span class="sd">    .. _PEP 484:</span>
 <span class="sd">        https://www.python.org/dev/peps/pep-0484/</span>
 <span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">pass</span>
 </pre></div>
 </div>
 <dl class="function">
