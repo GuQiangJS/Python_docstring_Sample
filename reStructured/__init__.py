@@ -13,7 +13,7 @@ def example(param1, param2, param3, param4, param5):
 
     :param param1: 第一个描述。接受一个字符串作为参数。
     :type param1: str
-    :param param2: 第二个描述。接受一个数字作为参数。
+    :param param2: 第二个描述。接受一个数字作为参数。该值会参考 'param1' 。
     :type param2: int
     :param param3: 第三个描述。接受一个字符串元组作为参数。
     :type param3: tuple[str]
@@ -52,15 +52,16 @@ def colored_box():
 
 def code_block():
     """
-    .. literalinclude:: ../../reStructured/__init__.py
-        :language: python
-        :lines: 1-8
+    采用 literalinclude 方式包含文件中的代码段::
+        .. literalinclude:: ../../reStructured/__init__.py
+            :language: python
+            :lines: 1-8
 
-    **..code-block:: 下面需要空一行。**
+    采用 ``..code-block::`` 方式显示代码段。
+    **..code-block:: 下面需要空一行。** ::
+        .. code-block:: python
 
-    .. code-block:: python
-
-        print("Hello!")
+            print("Hello!")
 
     直接使用 ``::`` 展示代码段：::
 
